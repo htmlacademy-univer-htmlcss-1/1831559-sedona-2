@@ -3,6 +3,7 @@
   src: url('../fonts/ptsans-400.woff2') format('woff2');
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
 }
 
 @font-face {
@@ -10,24 +11,29 @@
   src: url('../fonts/ptsans-700.woff2') format('woff2');
   font-style: normal;
   font-weight: 700;
+  font-display: swap;
 }
 
 body {
   font-family: 'PT Sans', 'Arial', sans-serif;
-  color: #000;
   font-size: 22px;
   line-height: 26px;
+  color: #333333;
+  background-color: rgba(131, 179, 211, 0.12);
+  text-align: center;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
+.header {
+  color: #000;
+  background-color: #fff;
 }
 
 .navigation-link {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
+  color: inherit;
+  text-decoration: none;
 }
 
 .button {
@@ -35,7 +41,7 @@ a {
   text-transform: uppercase;
   color: #fff;
   font-weight: 700;
-  font-family: 'PT Sans';
+  font-family: inherit;
   font-size: 16px;
   line-height: 20px;
 }
@@ -53,22 +59,36 @@ a {
   background-color: rgba(131, 179, 211, 0.12);
   background-image: url('../images/landscape-hero.jpg');
   background-repeat: no-repeat;
-  width: 1200px;
-  height: 485px;
+  background-size: 100% auto;
 }
 
 .section-title {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  font-weight: 700;
+  color: #000;
 }
 
-.section-subtitle {
-  color: #333333;
+.advantages-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.advantages-text {
+  font-size: 18px;
+  line-height: 28px;
 }
 
 .advantages-item.bright {
   background-color: #82B3D3;
+  color: #fff;
+}
+
+.bright .advantages-title {
   color: #fff;
 }
 
@@ -80,51 +100,36 @@ a {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
-.advantages-title {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-  text-transform: uppercase;
-}
-
-.advantages-text {
-  font-size: 18px;
-  color: #333333;
-}
-
-.bright .advantages-text {
-  color: #fff;
-}
-
 .what-todo-title {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  color: #000;
 }
 
 .what-todo-subtitle {
   font-size: 18px;
   line-height: 21px;
-  color: #333333;
 }
 
 .what-todo-item:nth-child(odd) {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
+.call-to-action-link{
+  color: #fff;
+  text-decoration: none;
+}
+
 .email-list {
   background-color: #333333;
   background-image: url('../images/subscribe-background.jpg');
   background-repeat: no-repeat;
-  width: 1200px;
-  height: 414px;
-}
-
-.email-list-title {
+  background-size: 100% auto;
   color: #fff;
 }
 
-.email-list-subtitle {
+.email-list-title {
   color: #fff;
 }
 
@@ -132,9 +137,11 @@ a {
   font-size: 40px;
   line-height: 40px;
   font-style: normal;
+  color: #000;
+  text-decoration: none;
 }
 
-.contacts-link:hover {
+.contacts-link:hover, .contacts-link:hover {
   color: #756157;
 }
 
