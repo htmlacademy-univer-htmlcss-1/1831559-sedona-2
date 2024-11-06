@@ -61,10 +61,12 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 0 70px;
+  gap: 28px;
 }
 
 .main-navigation {
-  flex-grow: 1;
+  /* flex-grow: 1; */
+  margin-right: auto;
 }
 
 .navigation-list, .user-menu-list {
@@ -132,6 +134,7 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   color: #000;
+  margin: 0;
 }
 
 .advantages-title {
@@ -260,6 +263,7 @@ body {
 .catalog-title {
   font-size: 30px;
   line-height: 36px;
+  margin-right: auto;
 }
 
 .catalog-card {
@@ -370,6 +374,7 @@ body {
 .filters-form {
   display: flex;
   justify-content: space-between;
+  gap: 70px;
 }
 
 .hotel-filters {
@@ -381,4 +386,10 @@ body {
   display: flex;
   flex-direction: column;
   gap: 32px;
+}
+
+.catalog-controllers {
+  display: flex;
+  justify-content: space-between;
+  gap: 70px;
 }
