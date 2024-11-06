@@ -14,6 +14,10 @@
   font-display: swap;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   height: 100%;
 }
@@ -33,6 +37,20 @@ body {
 
 .header {
   color: #000;
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: 0 70px;
+}
+
+.main-navigation {
+  flex-grow: 1;
+}
+
+.navigation-list, .user-menu-list {
+  margin: 0;
+  padding: 0;
 }
 
 .navigation-link {
@@ -45,6 +63,11 @@ body {
 
 .main-container {
   flex-grow: 1;
+}
+
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .button {
@@ -75,6 +98,16 @@ body {
   background-image: url('../images/landscape-hero.jpg');
   background-repeat: no-repeat;
   background-size: 100% auto;
+
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.hero-wellcome {
+  display: block;
+  margin: 0 auto;
 }
 
 .section-title {
@@ -256,4 +289,46 @@ body {
   color: inherit;
   background-color: inherit;
   background-image: none;
+}
+
+.advantages-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.advantages-item {
+  width: 400px;
+  height: 385px;
+}
+
+.advantages-item.image {
+  width: 800px;
+  height: 385px;
+}
+
+.what-todo-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.what-todo-item {
+  width: 400px;
+  height: 385px;
+}
+
+.footer {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-list {
+  margin: 0;
+  padding: 0;
 }
