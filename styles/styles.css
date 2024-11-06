@@ -32,14 +32,29 @@ body {
   font-size: 22px;
   line-height: 26px;
   color: #333333;
+  background-color: #F2F2F2;
   text-align: center;
+}
+
+.page-wrapper {
+  background-color: #fff;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 
 .header {
   color: #000;
   display: flex;
-  width: 1200px;
-  margin: 0 auto;
   justify-content: space-between;
   padding: 0 70px;
 }
@@ -51,6 +66,7 @@ body {
 .navigation-list, .user-menu-list {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .navigation-link {
@@ -63,11 +79,7 @@ body {
 
 .main-container {
   flex-grow: 1;
-}
-
-.page-container {
-  width: 1200px;
-  margin: 0 auto;
+  background-color: #fff;
 }
 
 .button {
@@ -101,8 +113,8 @@ body {
 
   display: flex;
   flex-direction: column;
-  width: 100%;
   margin: 0 auto;
+  height: 485px;
 }
 
 .hero-wellcome {
@@ -297,6 +309,7 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  list-style: none;
 }
 
 .advantages-item {
@@ -313,6 +326,7 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
+  list-style: none;
 }
 
 .what-todo-item {
@@ -321,8 +335,6 @@ body {
 }
 
 .footer {
-  width: 1200px;
-  margin: 0 auto;
   padding: 0 70px;
   display: flex;
   justify-content: space-between;
@@ -331,4 +343,5 @@ body {
 .social-list {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
