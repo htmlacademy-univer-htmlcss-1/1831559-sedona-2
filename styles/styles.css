@@ -33,7 +33,6 @@ body {
   line-height: 26px;
   color: #333333;
   background-color: #F2F2F2;
-  text-align: center;
 }
 
 .page-wrapper {
@@ -52,6 +51,9 @@ body {
   width: 1px;
 }
 
+.centered-text {
+  text-align: center;
+}
 .catalog-container {
   padding: 0 70px;
 }
@@ -221,7 +223,6 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
   color: #fff;
-  text-align: left;
   padding: 0 70px;
 }
 
@@ -253,10 +254,6 @@ body {
 
 .button-reset {
   background: none;
-}
-
-.filtered-catalog {
-  text-align: left;
 }
 
 .catalog-title {
