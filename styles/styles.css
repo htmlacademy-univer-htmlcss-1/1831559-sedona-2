@@ -52,6 +52,10 @@ body {
   width: 1px;
 }
 
+.catalog-container {
+  padding: 0 70px;
+}
+
 .header {
   color: #000;
   display: flex;
@@ -216,6 +220,7 @@ body {
   background-repeat: no-repeat;
   color: #fff;
   text-align: left;
+  padding: 0 70px;
 }
 
 .catalog-header {
@@ -277,6 +282,18 @@ body {
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+}
+
+.pagination,
+.breadcrumbs-list,
+.infrastructure-list,
+.housing-type-list,
+.display-by-list,
+.catalog-list,
+.card-stars-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .pagination-link {
@@ -344,4 +361,24 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.filtered-catalog {
+  padding: 0 70px;
+}
+
+.filters-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hotel-filters {
+  display: flex;
+  gap: 70px;
+}
+
+.filters-controllers {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
