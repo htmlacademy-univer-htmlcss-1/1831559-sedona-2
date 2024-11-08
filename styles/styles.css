@@ -14,16 +14,66 @@
   font-display: swap;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+
   font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 22px;
   line-height: 26px;
   color: #333333;
+  background-color: #F2F2F2;
+}
+
+.page-wrapper {
+  background-color: #fff;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.centered-text {
   text-align: center;
+}
+.catalog-container {
+  padding: 0 70px;
 }
 
 .header {
   color: #000;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 70px;
+  gap: 28px;
+}
+
+.main-navigation {
+  margin-right: auto;
+}
+
+.navigation-list, .user-menu-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .navigation-link {
@@ -32,6 +82,11 @@ body {
   font-weight: 700;
   color: inherit;
   text-decoration: none;
+}
+
+.main-container {
+  flex-grow: 1;
+  background-color: #fff;
 }
 
 .button {
@@ -62,6 +117,16 @@ body {
   background-image: url('../images/landscape-hero.jpg');
   background-repeat: no-repeat;
   background-size: 100% auto;
+
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  height: 485px;
+}
+
+.hero-wellcome {
+  display: block;
+  margin: 0 auto;
 }
 
 .section-title {
@@ -70,6 +135,7 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   color: #000;
+  margin: 0;
 }
 
 .advantages-title {
@@ -157,7 +223,7 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
   color: #fff;
-  text-align: left;
+  padding: 0 70px;
 }
 
 .catalog-header {
@@ -190,13 +256,10 @@ body {
   background: none;
 }
 
-.filtered-catalog {
-  text-align: left;
-}
-
 .catalog-title {
   font-size: 30px;
   line-height: 36px;
+  margin-right: auto;
 }
 
 .catalog-card {
@@ -221,6 +284,18 @@ body {
   text-transform: uppercase;
 }
 
+.pagination,
+.breadcrumbs-list,
+.infrastructure-list,
+.housing-type-list,
+.display-by-list,
+.catalog-list,
+.card-stars-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .pagination-link {
   color: #fff;
   background-color: #82B3D3;
@@ -243,4 +318,74 @@ body {
   color: inherit;
   background-color: inherit;
   background-image: none;
+}
+
+.advantages-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.advantages-item {
+  width: 400px;
+  height: 385px;
+}
+
+.advantages-item.image {
+  width: 800px;
+  height: 385px;
+}
+
+.what-todo-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+
+.what-todo-item {
+  width: 400px;
+  height: 385px;
+}
+
+.footer {
+  padding: 0 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.filtered-catalog {
+  padding: 0 70px;
+}
+
+.filters-form {
+  display: flex;
+  justify-content: space-between;
+  gap: 70px;
+}
+
+.hotel-filters {
+  display: flex;
+  gap: 70px;
+}
+
+.filters-controllers {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.catalog-controllers {
+  display: flex;
+  justify-content: space-between;
+  gap: 70px;
 }
