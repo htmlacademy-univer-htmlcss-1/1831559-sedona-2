@@ -372,6 +372,7 @@ body {
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 40px;
 }
 
 .catalog-card {
@@ -444,8 +445,10 @@ body {
 }
 
 .pagination {
+  margin-top: 40px;
   display: flex;
   gap: 8px;
+  flex-wrap: wrap;
 }
 
 .pagination-item {
