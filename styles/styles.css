@@ -165,6 +165,10 @@ body {
   margin-bottom: 21px;
 }
 
+.about .section-title {
+  margin-bottom: 25px;
+}
+
 .section-title {
   font-size: 30px;
   line-height: 36px;
@@ -172,7 +176,7 @@ body {
   font-weight: 700;
   color: #000;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .section-subtitle {
@@ -217,10 +221,6 @@ body {
   padding: 64px 70px;
 }
 
-.what-todo .section-title {
-  margin-bottom: 20px;
-}
-
 .what-todo-title {
   font-size: 24px;
   line-height: 28px;
@@ -247,10 +247,6 @@ body {
   margin-bottom: 54px;
 }
 
-.call-to-action .section-title {
-  margin-bottom: 20px;
-}
-
 .call-to-action .call-to-action-button {
   margin: 0;
 }
@@ -266,6 +262,7 @@ body {
   background-repeat: no-repeat;
   background-size: 100% auto;
   color: #fff;
+  padding: 95px 258px 104px;
 }
 
 .email-list-title {
