@@ -157,6 +157,12 @@ body {
 .hero-wellcome {
   display: block;
   margin: 0 auto;
+  margin-top: 51px;
+}
+
+.about .section-header {
+  padding: 69px 70px;
+  margin-bottom: 21px;
 }
 
 .section-title {
@@ -166,6 +172,11 @@ body {
   font-weight: 700;
   color: #000;
   margin: 0;
+  margin-bottom: 25px;
+}
+
+.section-subtitle {
+  margin: 0;
 }
 
 .advantages-title {
@@ -174,11 +185,15 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   color: #000;
+  margin-bottom: 62px;
+  max-width: 175px;
+  margin: 102px auto 62px;
 }
 
 .advantages-text {
   font-size: 18px;
   line-height: 28px;
+  margin: 0 85px;
 }
 
 .advantages-item.bright {
