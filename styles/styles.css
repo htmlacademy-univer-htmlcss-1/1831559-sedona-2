@@ -126,6 +126,10 @@ body {
   margin-left: auto;
 }
 
+.user-menu-button {
+  margin: 14px 0;
+}
+
 .main-container {
   flex-grow: 1;
   background-color: #fff;
