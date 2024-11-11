@@ -365,6 +365,11 @@ body {
   text-transform: uppercase;
 }
 
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .catalog-card {
   font-size: 18px;
   line-height: 21px;
@@ -372,6 +377,11 @@ body {
   flex-direction: column;
   width: 340px;
   padding: 20px;
+  margin-right: 20px;
+}
+
+.catalog-card:nth-child(3n) {
+  margin-right: 0;
 }
 
 .card-image {
