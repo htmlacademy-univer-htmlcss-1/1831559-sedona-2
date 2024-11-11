@@ -99,6 +99,21 @@ body {
   text-decoration: none;
 }
 
+.user-menu-list {
+  display: flex;
+  width: 268px;
+}
+
+.user-menu-link {
+  display: block;
+  min-height: 64px;
+  min-width: 44px;
+}
+
+.user-menu-item:last-child {
+  margin-left: auto;
+}
+
 .main-container {
   flex-grow: 1;
   background-color: #fff;
