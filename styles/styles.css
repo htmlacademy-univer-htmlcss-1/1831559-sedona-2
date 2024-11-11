@@ -269,6 +269,10 @@ body {
   color: #fff;
 }
 
+.email-list-subtitle {
+  margin-bottom: 54px;
+}
+
 .contacts-link {
   font-size: 40px;
   line-height: 40px;
