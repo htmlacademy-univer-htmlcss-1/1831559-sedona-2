@@ -239,6 +239,22 @@ body {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
+.call-to-action {
+  padding: 96px 70px;
+}
+
+.call-to-action .section-header {
+  margin-bottom: 54px;
+}
+
+.call-to-action .section-title {
+  margin-bottom: 20px;
+}
+
+.call-to-action .call-to-action-button {
+  margin: 0;
+}
+
 .call-to-action-link{
   color: #fff;
   text-decoration: none;
@@ -399,6 +415,7 @@ body {
   padding: 0;
   display: flex;
   list-style: none;
+  flex-wrap: wrap;
 }
 
 .what-todo-item {
