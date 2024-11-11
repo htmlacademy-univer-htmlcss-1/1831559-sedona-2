@@ -213,16 +213,26 @@ body {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
+.what-todo .section-header {
+  padding: 64px 70px;
+}
+
+.what-todo .section-title {
+  margin-bottom: 20px;
+}
+
 .what-todo-title {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
   color: #000;
+  margin: 183px 85px 30px;
 }
 
 .what-todo-subtitle {
   font-size: 18px;
   line-height: 21px;
+  margin: 0 85px;
 }
 
 .what-todo-item:nth-child(odd) {
