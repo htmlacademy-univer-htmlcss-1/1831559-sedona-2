@@ -370,15 +370,15 @@ body {
 }
 
 .catalog-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
   padding-bottom: 40px;
 }
 
 .catalog-card {
   font-size: 18px;
   line-height: 21px;
-  grid-area: card;
   width: 340px;
   padding: 20px;
   display: grid;
