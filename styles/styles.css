@@ -237,7 +237,23 @@ body {
   margin-bottom: 62px;
   max-width: 175px;
   margin: 102px auto 62px;
+  position: relative;
 }
+
+.advantages-item {
+  position: relative;
+}
+
+.advantages-title::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.3);
+  top: 86px;
+  left: 57px;
+}
+
 
 .advantages-text {
   font-size: 18px;
@@ -248,6 +264,10 @@ body {
 .advantages-item.bright {
   background-color: #82B3D3;
   color: #fff;
+}
+
+.advantages-item.bright .advantages-title::after {
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .bright .advantages-title {
