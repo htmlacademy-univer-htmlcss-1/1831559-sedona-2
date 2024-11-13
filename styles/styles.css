@@ -370,78 +370,84 @@ body {
 }
 
 .catalog-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
   padding-bottom: 40px;
 }
 
 .catalog-card {
   font-size: 18px;
   line-height: 21px;
-  display: flex;
-  flex-direction: column;
   width: 340px;
   padding: 20px;
-  margin-right: 20px;
-}
-
-.catalog-card:nth-child(3n) {
-  margin-right: 0;
+  display: grid;
+  grid-template-areas:
+    "image image"
+    "title title"
+    "type price"
+    "more button"
+    "stars score";
+  column-gap: 20px;
+  row-gap: 16px;
 }
 
 .card-image {
-  margin-bottom: 16px;
-  align-self: center;
-}
-
-.catalog-card a {
-  text-decoration: none;
+  grid-area: image;
+  max-width: 312px;
+  max-height: auto;
+  justify-self: center;
 }
 
 .card-title {
+  grid-area: title;
   font-size: 24px;
   line-height: 28px;
   color: #000;
   margin: 0;
-  margin-bottom: 16px;
 }
 
-.card-info {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 16px;
-}
-
-.card-info .card-housing-type,
-.card-info .card-price {
+.card-housing-type {
+  grid-area: type;
   margin: 0;
 }
 
-.card-buttons {
-  display: flex;
-  justify-content: space-between;
-  height: 36px;
-  align-items: center;
-  margin-bottom: 16px;
+.card-price {
+  grid-area: price;
+  justify-self: end;
+  margin: 0;
 }
 
-.ratings {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 37px;
+.card-link {
+  text-decoration: none;
+}
+
+.card-more-info {
+  grid-area: more;
+  margin: 0;
+  align-self: center;
+}
+
+.card-button {
+  grid-area: button;
 }
 
 .card-stars-list {
+  grid-area: stars;
   display: flex;
   gap: 6px;
+  align-self: center;
 }
 
 .card-users-score {
+  grid-area: score;
+  margin: 0;
+  justify-self: end;
   background-color: #F2F2F2;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  align-self: center;
 }
 
 .pagination {
