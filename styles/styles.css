@@ -175,12 +175,24 @@ body {
 }
 
 .button.big {
+  height: 52px;
   font-size: 20px;
   line-height: 36px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .button.action {
   background-color: #82B3D3;
+}
+
+.button.action:hover, .button.action:focus {
+  background-color: #68A2CA;
+}
+
+.button.action:active {
+  background-color: rgba(130, 179, 211, 1);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .button.active {
@@ -698,4 +710,9 @@ body {
   display: flex;
   justify-content: center;
   margin: 0 auto;
+}
+
+.email-list-form .button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
