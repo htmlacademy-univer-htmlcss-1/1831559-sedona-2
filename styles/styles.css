@@ -719,6 +719,40 @@ body {
 .display-by-button {
   width: 48px;
   height: 48px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  background-color: inherit;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px 14px;
+}
+
+.display-by-button.active,
+.display-by-button:hover,
+.display-by-button:active {
+  border-color: #000;
+}
+
+.display-by-button:focus {
+  background-color: #fff;
+}
+
+.display-by-button:focus-visible {
+  border-color: #68A2CA;
+  outline: none;
+}
+
+.display-by-button.table {
+  background-image: url(../images/icons/small-cards-icon.svg);
+}
+
+.display-by-button.slideshow {
+  background-image: url(../images/icons/large-cards-icon.svg);
+}
+
+.display-by-button.list {
+  background-image: url(../images/icons/list-view-icon.svg);
 }
 
 .catalog .section-header {
