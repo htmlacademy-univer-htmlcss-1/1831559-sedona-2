@@ -292,6 +292,33 @@ body {
   text-transform: uppercase;
   color: #000;
   margin: 183px 85px 30px;
+  position: relative;
+}
+
+.what-todo-item:nth-child(1) .what-todo-title:before {
+  content: url(../images/icons/house-icon.svg);
+  width: 75px;
+  height: 72px;
+  position: absolute;
+  top: -102px;
+}
+
+.what-todo-item:nth-child(2) .what-todo-title:before {
+  content: url(../images/icons/food-icon.svg);
+  width: 74px;
+  height: 70px;
+  position: absolute;
+  top: -102px;
+  left: 78px;
+}
+
+.what-todo-item:nth-child(3) .what-todo-title:before {
+  content: url(../images/icons/gift-box-icon.svg);
+  width: 64px;
+  height: 76px;
+  position: absolute;
+  top: -102px;
+  left: 83px;
 }
 
 .what-todo-subtitle {
