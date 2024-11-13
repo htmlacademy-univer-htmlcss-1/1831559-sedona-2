@@ -134,7 +134,7 @@ body {
 }
 
 .user-menu-item:nth-child(2) .user-menu-link {
-  background-image: url("../images/icons/heart-icon.svgf");
+  background-image: url("../images/icons/heart-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
