@@ -174,7 +174,7 @@ body {
   border: none;
 }
 
-.button:hover, .button:focus-visible {
+.button:hover, .button:focus-visible, .button:focus {
   background-color: #615048;
   outline: none;
 }
@@ -196,7 +196,9 @@ body {
   background-color: #82B3D3;
 }
 
-.button.action:hover, .button.action:focus-visible {
+.button.action:hover,
+.button.action:focus-visible,
+.button.action:focus {
   background-color: #68A2CA;
 }
 
@@ -209,7 +211,9 @@ body {
   background-color: #7DB54F;
 }
 
-.button.active:hover, .button.active:focus-visible {
+.button.active:hover,
+.button.active:focus-visible,
+.button.active:focus {
   background-color: #6C9E42
 }
 
@@ -767,7 +771,7 @@ body {
   border-color: #000;
 }
 
-.display-by-button:focus-visible {
+.display-by-button:focus-visible, .display-by-button:focus {
   border-color: #68A2CA;
   outline: none;
 }
