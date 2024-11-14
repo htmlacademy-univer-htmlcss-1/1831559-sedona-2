@@ -174,8 +174,9 @@ body {
   border: none;
 }
 
-.button:hover, button:focus {
- background-color: #615048;
+.button:hover, .button:focus-visible {
+  background-color: #615048;
+  outline: none;
 }
 
 .button:active {
@@ -195,7 +196,7 @@ body {
   background-color: #82B3D3;
 }
 
-.button.action:hover, .button.action:focus {
+.button.action:hover, .button.action:focus-visible {
   background-color: #68A2CA;
 }
 
@@ -205,6 +206,15 @@ body {
 }
 
 .button.active {
+  background-color: #7DB54F;
+}
+
+.button.active:hover, .button.active:focus-visible {
+  background-color: #6C9E42
+}
+
+.button.active:active {
+  color: rgba(255, 255, 255, 0.3);
   background-color: #7DB54F;
 }
 
@@ -497,8 +507,12 @@ body {
     "type price"
     "more button"
     "stars score";
+  grid-template-columns: 140px;
   column-gap: 20px;
   row-gap: 16px;
+  border: 1px solid #E6E6E6;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
 .card-image {
@@ -528,17 +542,23 @@ body {
 }
 
 .card-link {
+  display: block;
   text-decoration: none;
+  padding: 8px 24px;
 }
 
 .card-more-info {
   grid-area: more;
   margin: 0;
   align-self: center;
+  width: 140px;
 }
 
 .card-button {
   grid-area: button;
+  width: 140px;
+  max-height: 36px;
+  padding: 0;
 }
 
 .card-stars-list {
@@ -549,10 +569,15 @@ body {
 }
 
 .card-users-score {
+  min-width: 140px;
+  height: 37px;
   grid-area: score;
   margin: 0;
+  text-align: center;
+  padding: 9px 22px 8px 23px;
   justify-self: end;
   background-color: #F2F2F2;
+  border-radius: 4px;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -732,10 +757,6 @@ body {
 .display-by-button:hover,
 .display-by-button:active {
   border-color: #000;
-}
-
-.display-by-button:focus {
-  background-color: #fff;
 }
 
 .display-by-button:focus-visible {
