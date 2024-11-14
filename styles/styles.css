@@ -440,6 +440,14 @@ body {
   height: 100%;
 }
 
+.breadcrumbs-link:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs-link:active {
+  opacity: 0.3;
+}
+
 .breadcrumbs-item:first-child {
   margin-right: 10px;
 }
