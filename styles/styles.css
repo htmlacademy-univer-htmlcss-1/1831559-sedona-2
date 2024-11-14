@@ -492,6 +492,18 @@ body {
   background: none;
 }
 
+.button-reset:hover {
+  opacity: 0.6;
+  background: none;
+}
+
+.button-reset:focus,
+.button-reset:focus-visible {
+  background: none;
+  border-radius: 3px;
+  outline: 3px solid #83B3D3;
+}
+
 .catalog-title {
   margin: 0;
   font-size: 30px;
