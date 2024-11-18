@@ -41,13 +41,7 @@ body {
   margin: 0 auto;
 }
 
-.pagination,
-.breadcrumbs-list,
-.infrastructure-list,
-.housing-type-list,
-.display-by-list,
-.catalog-list,
-.card-stars-list {
+.list {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -88,12 +82,6 @@ body {
 
 .main-navigation {
   margin-right: auto;
-}
-
-.navigation-list, .user-menu-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
 }
 
 .navigation-list {
@@ -406,7 +394,7 @@ body {
   text-decoration: none;
 }
 
-.contacts-link:hover, .contacts-link:hover {
+.contacts-link:hover, .contacts-link:focus-visible {
   color: #756157;
 }
 
@@ -420,7 +408,7 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
   color: #fff;
-  padding: 0 70px;
+  padding: 35px 70px 70px;
 }
 
 .catalog-header {
@@ -471,11 +459,6 @@ body {
   left: -18px;
 }
 
-.filters-form {
-  font-size: 18px;
-  line-height: 23px;
-}
-
 .infrastructure-filters {
   margin-right: 70px;
 }
@@ -514,6 +497,7 @@ body {
   gap: 20px;
   grid-template-columns: repeat(3, 1fr);
   padding-bottom: 40px;
+  border-bottom: 1px solid #E6E6E6;
 }
 
 .catalog-card {
@@ -672,12 +656,9 @@ body {
 }
 
 .advantages-list {
-  margin: 0;
-  padding: 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  list-style: none;
 }
 
 .advantages-item {
@@ -691,10 +672,7 @@ body {
 }
 
 .what-todo-list {
-  margin: 0;
-  padding: 0;
   display: flex;
-  list-style: none;
   flex-wrap: wrap;
 }
 
@@ -710,9 +688,6 @@ body {
 }
 
 .social-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
   display: flex;
   flex-wrap: wrap;
   max-width: 141px;
@@ -722,19 +697,69 @@ body {
   display: block;
   min-width: 47px;
   min-height: 50px;
+  position: relative;
+
+  /* display: inline-block;
+  text-decoration: none;
+  color: inherit; Наследует цвет */
+}
+
+.social-icon {
+  max-width: 24px;
+  max-height: 17px;
+  fill: #83B3D3;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.social-link:hover .social-icon,
+.social-link:focus-visible .social-icon {
+  fill: #68A2CA;
+}
+
+.social-link:active .social-icon {
+  fill: rgba(104, 162, 202, 0.3);
+}
+
+
+.social-icon:hover {
+  fill: #000;
+
 }
 
 .copyright-link {
-  max-height: 50px;
-  align-self: center;
+  display: block;
+  width: 115px;
+  height: 100%;
+  position: relative;
 }
+
+.html-logo {
+  fill: #000;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.copyright-link:hover .html-logo,
+.copyright-link:focus-visible .html-logo {
+  fill: #756157;
+}
+
+.copyright-link:active .html-logo {
+  fill: rgba(117, 97, 87, 0.3);
+}
+
 
 .filtered-catalog {
   padding: 50px 70px 60px;
-}
-
-.filters {
-  padding: 35px 70px 70px;
 }
 
 .filters .catalog-header {
@@ -745,6 +770,8 @@ body {
 .filters-form {
   display: flex;
   justify-content: space-between;
+  font-size: 18px;
+  line-height: 23px;
 }
 
 .hotel-filters {
