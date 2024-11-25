@@ -255,10 +255,10 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   color: #000;
-  margin-bottom: 62px;
   max-width: 175px;
   margin: 102px auto 62px;
   position: relative;
+  margin-bottom: 30px;
 }
 
 .advantages-item {
@@ -267,14 +267,12 @@ body {
 
 .advantages-title::after {
   content: "";
-  position: absolute;
+  display: block;
   width: 60px;
   height: 2px;
   background-color: rgba(0, 0, 0, 0.3);
-  top: 86px;
-  left: 57px;
+  margin: 30px auto 0;
 }
-
 
 .advantages-text {
   font-size: 18px;
@@ -386,6 +384,11 @@ body {
   margin-bottom: 54px;
 }
 
+.email-button {
+  font-size: 20px;
+  line-height: 36px;
+}
+
 .contacts-link {
   font-size: 40px;
   line-height: 40px;
@@ -430,11 +433,11 @@ body {
   height: 100%;
 }
 
-.breadcrumbs-link:hover {
+.breadcrumbs-link.active:hover {
   opacity: 0.6;
 }
 
-.breadcrumbs-link:active {
+.breadcrumbs-link.active:active {
   opacity: 0.3;
 }
 
@@ -698,10 +701,6 @@ body {
   min-width: 47px;
   min-height: 50px;
   position: relative;
-
-  /* display: inline-block;
-  text-decoration: none;
-  color: inherit; Наследует цвет */
 }
 
 .social-icon {
